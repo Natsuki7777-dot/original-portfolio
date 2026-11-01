@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lo-Fi lounge</title>
+    <meta name="description" content="Lo-Fi Loungeは、忙しい日々にほっと一息つける、安心する…そんな空間の創出に取り組んでいます。">
+
+    <!-- リセットcss-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!--google fonts Caveat,BIZ UDPGothic,Niconne-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Caveat:wght@400..700&family=Niconne&display=swap" rel="stylesheet">
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="header-background">
+        <div class="logo-background">
+          <div class="logo-text">Lofi</div>
+        </div>
+
+        <!-- ハンバーガーボタン -->
+        <button type="button" class="hamburger-button">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="header-menu-pc-list">
+          <div><a href="index.html">Home</a></div>
+          <div><a href="lofiplaylist_playlist.html">Playlist</a></div>
+          <div><a href="lofiplaylist_songsearch.html">Song search</a></div>
+          <div><a href="lofiplaylist_producer_information.html">Producer information</a></div>
+          <div><a href="lofiplaylist_contact.html">Contact</a></div>
+        </div>
+      </div>
+
+      <!-- ハンバーガーメニュー -->
+      <nav class="hamburger-menu">
+        <div class="hamburger-menu-list">
+
+          <div class="hamburger-menu-list-inside-text">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="lofiplaylist_playlist.html">Playlist</a></div>
+            <div><a href="lofiplaylist_songsearch.html">Song search</a></div>
+            <div><a href="lofiplaylist_producer_information.html">Producer information</a></div>
+            <div><a href="lofiplaylist_contact.html">Contact</a></div>
+          </div>
+
+        </div>
+      </nav>
+
+
+
+    </header>
+
+    <main>
+
+      <section class="home-lofi-image">
+
+        <div class="lofi-image"></div>
+        <div class="lofi-lounge-text-round">
+          <h1 class="lofi-lounge-text">Lo-Fi Lounge</h1>
+        </div>
+      </section>
+
+      <section class="home-songs">
+        <h2 class="songs-text">Songs</h2>
+        <div class="chill-in-your-life">あなたの生活にチルを。</div>
+
+        <div class="playlist-container">
+          <div class="playlist-item">
+
+            <picture class="album-top">
+              <!-- ブラウザ幅768pxまで表示 -->
+              <source srcset="images/home/album1_top.png" media="(max-width: 768px)">
+              <!-- ブラウザ幅769px～から最大幅まで表示 -->
+              <img src="images/home/album1_pc_top.png" class="album1-image" alt="">
+            </picture>
+            <p onclick="playAudio(1)" class="planet-observation">星空観察</p>
+            <p class="music-maker-name-1">作曲: 黒住菜月</p>
+            <div class="myAudio-round">
+              <audio class="my-audio1" controls loop src="audio/Song1-latest.mp3">星空観察</audio>
+            </div>
+          </div>
+
+          <div class="playlist-item">
+            <picture class="album-top">
+              <!-- ブラウザ幅768pxまで表示 -->
+              <source srcset="images/home/album2_top.png" media="(max-width: 768px)">
+              <!-- ブラウザ幅769px～から最大幅まで表示 -->
+              <img src="images/home/album2_pc_top.png" class="album2-image" alt="">
+            </picture>
+            <p onclick="playAudio(2)" class="memories-of-my-hometown">故郷への追憶</p>
+            <p class="music-maker-name-1">作曲: 黒住菜月</p>
+            <div class="myAudio-round">
+              <audio class="my-audio2" controls loop src="audio/Song2.mp3">故郷への追憶</audio>
+            </div>
+          </div>
+
+          <div class="playlist-item">
+            <picture class="album-top">
+              <!-- ブラウザ幅768pxまで表示 -->
+              <source srcset="images/home/album3_top.png" media="(max-width: 768px)">
+              <!-- ブラウザ幅769px～から最大幅まで表示 -->
+              <img src="images/home/album3_pc_top.png" class="album3-image" alt="">
+            </picture>
+            <p onclick="playAudio(3)" class="early-morning-walk">早朝の散歩</p>
+            <p class="music-maker-name-1">作曲: 黒住菜月</p>
+            <div class="myAudio-round">
+              <audio class="my-audio3" controls loop src="audio/Song3.mp3">早朝の散歩</audio>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="home-origin">
+        <h2 class="origin-text">Origin</h2>
+        <p class="origin-text-1">忙しい日常生活に追われていると、ついつい自分のケアやリラックスの時間を忘れがちです。</p>
+        <p class="origin-text-2">Lo-Fi Loungeは、そんな人達を少しでも癒すために生まれました。</p>
+        <p class="origin-text-3">Lo-Fi Loungeであなたも一息ついていきませんか？</p>
+
+        <picture class="record">
+          <!-- ブラウザ幅768pxまで表示 -->
+          <source srcset="images/home/record.png" media="(max-width: 768px)">
+          <!-- ブラウザ幅769px～から最大幅まで表示 -->
+          <img src="images/home/record_pc.png" class="record-image" alt="">
+        </picture>
+      </section>
+
+    </main>
+    <footer>
+      <div class="footer-background">
+        <div class="logo-background-2">
+          <div class="logo-text-2">Lofi</div>
+        </div>
+        <div class="footer-text">
+          <div><a href="index.html">Home</a></div>
+          <div><a href="lofiplaylist_playlist.html">Playlist</a></div>
+          <div><a href="lofiplaylist_songsearch.html">Song search</a></div>
+          <div><a href="lofiplaylist_producer_information.html">Producer information</a></div>
+          <div><a href="lofiplaylist_contact.html">Contact</a></div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+
+</html>

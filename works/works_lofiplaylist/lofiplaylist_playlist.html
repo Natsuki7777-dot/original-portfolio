@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lo-Fi lounge</title>
+    <meta name="description" content="">
+
+    <!-- リセットcss-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Caveat:wght@400..700&family=Niconne&display=swap" rel="stylesheet">
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+
+
+  </head>
+
+  <body>
+
+    <header>
+      <div class="header-background">
+        <div class="logo-background">
+          <div class="logo-text">Lofi</div>
+        </div>
+
+        <!-- ハンバーガーボタン -->
+        <button type="button" class="hamburger-button">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="header-menu-pc-list">
+          <div><a href="index.html">Home</a></div>
+          <div><a href="lofiplaylist_playlist.html">Playlist</a></div>
+          <div><a href="lofiplaylist_songsearch.html">Song search</a></div>
+          <div><a href="lofiplaylist_producer_information.html">Producer information</a></div>
+          <div><a href="lofiplaylist_contact.html">Contact</a></div>
+        </div>
+      </div>
+      <!-- ハンバーガーメニュー -->
+      <nav class="hamburger-menu">
+        <div class="hamburger-menu-list">
+
+          <div class="hamburger-menu-list-inside-text">
+            <div><a href="index.html">Home</a></div>
+            <div><a href="lofiplaylist_playlist.html">Playlist</a></div>
+            <div><a href="lofiplaylist_songsearch.html">Song search</a></div>
+            <div><a href="lofiplaylist_producer_information.html">Producer information</a></div>
+            <div><a href="lofiplaylist_contact.html">Contact</a></div>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="playlist-playlist">
+        <div class="container-playlist">
+          <h1>Playlist</h1>
+          <div class="playlist-gray-background-1">
+            <img src="images/playlist/album1_pc_playlist.png" class="playlist-song1-image" alt="">
+            <div class="playlist-planet-observation">星空観察</div>
+            <audio class="audio-player" data-song="song1" controls loop src="audio/Song1-latest.mp3"></audio>
+          </div>
+
+          <div class="playlist-gray-background-2">
+            <img src="images/playlist/album2_pc_playlist.png" class="playlist-song2-image" alt="">
+            <div class="playlist-memories-of-my-hometown">故郷への追憶</div>
+            <audio class="audio-player" data-song="song2" controls loop src="audio/Song2.mp3"></audio>
+          </div>
+
+          <div class="playlist-gray-background-3">
+            <img src="images/playlist/album3_pc_playlist.png" class="playlist-song3-image" alt="">
+            <div class="playlist-early-morning-walk">早朝の散歩</div>
+            <audio class="audio-player" data-song="song3" controls loop src="audio/Song3.mp3"></audio>
+          </div>
+        </div>
+
+        <picture class="playlist-image-picture">
+          <!-- ブラウザ幅768pxまで表示 -->
+          <source srcset="images/playlist/playlist_image.png" media="(max-width: 768px)">
+          <!-- ブラウザ幅769px～から最大幅まで表示 -->
+          <img src="images/playlist/playlist_image_pc.png" class="playlist-image" alt="">
+        </picture>
+      </section>
+
+    </main>
+    <footer>
+      <div class="footer-background">
+        <div class="logo-background-2">
+          <div class="logo-text-2">Lofi</div>
+        </div>
+        <div class="footer-text">
+          <div><a href="index.html">Home</a></div>
+          <div><a href="lofiplaylist_playlist.html">Playlist</a></div>
+          <div><a href="lofiplaylist_songsearch.html">Song search</a></div>
+          <div><a href="lofiplaylist_producer_information.html">Producer information</a></div>
+          <div><a href="lofiplaylist_contact.html">Contact</a></div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,1140 @@
+@charset "UTF-8";
+/*最小画面サイズは、横幅320px*/
+
+body {
+  font-family: "BIZ UDPGothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #0b0a09;
+}
+
+.header-background {
+  display: flex;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  position: fixed;
+  /*z-index: 5;*/
+  z-index: 2;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to right, #f9a0e3, #ff00b4);
+}
+
+.logo-background {
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-left: 21px;
+}
+
+.logo-text {
+  font-family: "Niconne", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  margin-left: 3px;
+  margin-top: 8px;
+}
+
+/*another font(English)
+// <weight>: Use a value from 400 to 700
+// <uniquifier>: Use a unique and descriptive class name
+
+.caveat-<uniquifier> {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>400-700;
+  font-style: normal;
+}
+
+*/
+
+.header-menu-pc-list {
+  display: none;
+}
+
+
+
+
+@media (min-width:870px) {
+  .header-menu-pc-list {
+    display: flex;
+    column-gap: 44px;
+    margin-left: auto;
+    padding-right: 16px;
+    font-size: 30px;
+    align-items: center;
+  }
+}
+
+
+@media (min-width:870px) {
+  .header-menu-pc-list a {
+    text-decoration: none;
+    color: white;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+
+
+@media (min-width:870px) {
+  .header-menu-pc-list a:hover {
+    border-radius: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: rgba(173, 8, 242, 0.27);
+  }
+}
+
+i.bi.bi-list {
+  position: fixed;
+  right: 0;
+  z-index: 999;
+  font-size: 28px;
+  color: #fff;
+  margin-right: 21px;
+  overflow: hidden;
+  top: 20px;
+}
+
+
+@media (min-width:870px) {
+  i.bi.bi-list {
+    display: none;
+  }
+}
+
+
+/* ハンバーガーメニュー */
+.hamburger-menu {
+  position: fixed;
+  background-color: #0b0a09;
+  transition: opacity .3s linear;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  margin-top: 35px;
+  padding-top: 70px;
+  padding-bottom: 40px;
+  z-index: 1;
+}
+
+/* スライドイン後の位置の指定 */
+.hamburger-menu-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.hamburger-menu-list {
+  list-style: none;
+
+}
+
+.hamburger-menu-list-inside-text {
+  text-align: center;
+  line-height: 3;
+  font-size: 25px;
+}
+
+@media (min-width:769px) {
+  .hamburger-menu-list-inside-text {
+    font-size: 35px;
+  }
+}
+
+
+.hamburger-menu-list-inside-text a {
+  color: white;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.lofi-image {
+  background-color: #000000;
+  height: 478px;
+  background-image: url("../images/home/lofi_image_group.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+@media (min-width:768px) {
+  .lofi-image {
+    background-image: url("../images/home/lofi_image_group_pc.png");
+  }
+}
+
+.lofi-lounge-text-round {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+}
+
+@media (min-width:768px) {
+  .lofi-lounge-text-round {
+    top: 30%;
+  }
+}
+
+
+.lofi-lounge-text {
+  font-size: 34px;
+  color: white;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  background-color: rgba(255, 0, 180, 0.62);
+  text-align: center;
+  max-width: 283px;
+  padding: 20px;
+  white-space: nowrap;
+}
+
+
+@media (min-width:768px) {
+  .lofi-lounge-text {
+    font-size: 67.29px;
+    padding: 35px;
+    max-width: 560px;
+  }
+}
+
+.home-songs {
+  background: linear-gradient(to right, #b071a1, #7e1bac);
+  color: white;
+  padding-right: 16px;
+  padding-left: 16px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding-bottom: 18px;
+}
+
+@media (min-width:768px) {
+  .home-songs {
+    text-align: center;
+    padding-bottom: 46px;
+  }
+}
+
+
+.songs-text {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+  padding-top: 5px;
+}
+
+@media (min-width:768px) {
+  .songs-text {
+    font-size: 57px;
+    padding-top: 10px;
+  }
+}
+
+
+.chill-in-your-life {
+  font-family: "BIZ UDPGothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: underline;
+  margin-top: 17px;
+}
+
+
+@media (min-width:768px) {
+  .chill-in-your-life {
+    font-size: 29px;
+  }
+}
+
+
+/*プレイリストエリア全体のスタイル*/
+/* 画像 */
+.album-top {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.playlist-container {
+  text-align: center;
+}
+
+
+@media (min-width:768px) {
+
+  /* コンテナ */
+  .playlist-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    max-width: 67.5rem;
+    margin: 0 auto;
+    margin-top: 78px;
+  }
+}
+
+.playlist-item {
+  margin-top: 30px;
+}
+
+/* アイテム */
+@media (min-width:768px) {
+  .playlist-item {
+    margin-top: initial;
+    width: calc((100% - 1rem) /2);
+  }
+}
+
+@media (min-width:768px) {
+  .playlist-item:last-child {
+    margin-top: 2rem;
+  }
+}
+
+/* 画像 */
+.album-top {
+  display: block;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  margin-left: auto;
+  border-radius: 50%;
+}
+
+
+.myAudio-round {
+  margin-top: 10px;
+}
+
+/*プレイリストエリア個別のスタイル*/
+
+@media (min-width:768px) {
+  img.album1-image {
+    max-width: 100%;
+    width: 255px;
+    height: 255px;
+    max-height: 100%;
+  }
+}
+
+
+
+.planet-observation {
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+@media (min-width:768px) {
+  .planet-observation {
+    font-size: 29px;
+  }
+}
+
+
+
+@media (min-width:768px) {
+  .planet-observation:hover {
+    font-size: 31px;
+    text-decoration: underline;
+  }
+}
+
+.music-maker-name-1 {
+  font-size: 14px;
+  margin-top: 7px;
+  font-weight: 400;
+}
+
+
+@media (min-width:768px) {
+  .music-maker-name-1 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  img.album2-image {
+    max-width: 100%;
+    width: 255px;
+    height: 255px;
+    max-height: 100%;
+  }
+}
+
+
+.memories-of-my-hometown {
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+@media (min-width:768px) {
+  .memories-of-my-hometown {
+    font-size: 29px;
+  }
+}
+
+
+@media (min-width:768px) {
+  .memories-of-my-hometown:hover {
+    font-size: 31px;
+    text-decoration: underline;
+  }
+}
+
+
+@media (min-width:768px) {
+  img.album3-image {
+    max-width: 100%;
+    width: 255px;
+    height: 255px;
+    max-height: 100%;
+  }
+}
+
+
+.early-morning-walk {
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media (min-width:768px) {
+  .early-morning-walk {
+    font-size: 29px;
+  }
+}
+
+
+@media (min-width:768px) {
+  .early-morning-walk:hover {
+    font-size: 31px;
+    text-decoration: underline;
+  }
+}
+
+
+.home-origin {
+  color: white;
+  padding-right: 16px;
+  padding-left: 16px;
+  font-family: "BIZ UDPGothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 21px;
+  background-color: #000000;
+}
+
+@media (min-width:768px) {
+  .home-origin {
+    text-align: center;
+    padding-bottom: initial;
+  }
+}
+
+.origin-text {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+  padding-top: 5px;
+}
+
+
+@media (min-width:768px) {
+  .origin-text {
+    font-size: 57px;
+    padding-top: 10px;
+    margin-bottom: 60px;
+  }
+}
+
+
+.origin-text-1 {
+  margin-top: 25px;
+  line-height: 1.5;
+}
+
+@media (min-width:768px) {
+  .origin-text-1 {
+    font-size: 29px;
+  }
+}
+
+.origin-text-2 {
+  margin-top: 25px;
+  line-height: 1.5;
+}
+
+@media (min-width:768px) {
+  .origin-text-2 {
+    font-size: 29px;
+  }
+}
+
+
+.origin-text-3 {
+  margin-top: 25px;
+  line-height: 1.5;
+}
+
+
+@media (min-width:768px) {
+  .origin-text-3 {
+    font-size: 29px;
+  }
+}
+
+.record-image {
+  margin-top: 80px;
+}
+
+/*footer*/
+.footer-background {
+  padding-top: 16px;
+  padding-bottom: 28px;
+  background: linear-gradient(to right, #f9a0e3, #ff00b4);
+}
+
+@media (min-width:768px) {
+  .footer-background a:hover {
+    background-color: rgba(173, 8, 242, 0.27);
+    border-radius: 10px;
+    padding-top: 12px;
+    padding-right: 3px;
+    padding-bottom: 12px;
+  }
+}
+
+.logo-background-2 {
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-left: 21px;
+}
+
+.logo-text-2 {
+  font-family: "Niconne", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  margin-left: 3px;
+  margin-top: 8px;
+}
+
+.footer-text {
+  margin-top: 19px;
+  margin-left: 16px;
+  color: white;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.5;
+  font-size: 22px;
+}
+
+@media (min-width:768px) {
+  .footer-text {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 2.3;
+  }
+}
+
+.footer-text a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+/*playlistページ*/
+
+
+.container-playlist h1 {
+  color: white;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+  margin-bottom: 15px;
+
+}
+
+@media (min-width:768px) {
+  .container-playlist h1 {
+    text-align: center;
+    font-size: 57px;
+  }
+}
+
+.playlist-playlist {
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 87px;
+}
+
+
+@media (min-width:768px) {
+  .playlist-playlist {
+    padding-top: 120px;
+  }
+}
+
+.playlist-gray-background-1 {
+  display: flex;
+  background-color: #403c3f;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #000000;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.playlist-gray-background-1:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.playlist-song1-image {
+  display: none;
+}
+
+@media (min-width:768px) {
+  .playlist-song1-image {
+    display: initial;
+  }
+}
+
+.playlist-planet-observation {
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+@media (min-width:768px) {
+  .playlist-planet-observation {
+    font-size: 29px;
+    margin-left: 44px;
+  }
+}
+
+.audio-player {
+  display: block;
+  margin-left: auto;
+  width: 210px;
+  height: 30px;
+}
+
+.playlist-gray-background-2 {
+  display: flex;
+  background-color: #403c3f;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #000000;
+  align-items: center;
+  white-space: nowrap;
+}
+
+
+.playlist-gray-background-2:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.playlist-song2-image {
+  display: none;
+}
+
+@media (min-width:768px) {
+  .playlist-song2-image {
+    display: initial;
+  }
+}
+
+
+.playlist-memories-of-my-hometown {
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+
+@media (min-width:768px) {
+  .playlist-memories-of-my-hometown {
+    font-size: 29px;
+    margin-left: 44px;
+  }
+}
+
+
+
+.playlist-gray-background-3 {
+  display: flex;
+  background-color: #403c3f;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #000000;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.playlist-gray-background-3:hover {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+.playlist-song3-image {
+  display: none;
+}
+
+@media (min-width:768px) {
+  .playlist-song3-image {
+    display: initial;
+  }
+}
+
+.playlist-early-morning-walk {
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+@media (min-width:768px) {
+  .playlist-early-morning-walk {
+    font-size: 29px;
+    margin-left: 44px;
+  }
+}
+
+img.playlist-image {
+  display: block;
+  width: 100%;
+  margin-top: 27px;
+  margin-bottom: 193px;
+}
+
+@media (min-width:768px) {
+  img.playlist-image {
+    display: block;
+    margin-top: 58px;
+    margin-bottom: 228px;
+  }
+}
+
+
+/*songsearchページ*/
+
+.song-search-area {
+  padding-top: 87px;
+}
+
+@media (min-width:768px) {
+  .song-search-area {
+    padding-top: 120px;
+  }
+
+}
+
+
+.container-songsearch {
+  text-align: center;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media (min-width:768px) {
+  .container-songsearch {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1079px;
+  }
+}
+
+h1.song-search-text {
+  font-size: 25px;
+  color: white;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  text-align: left;
+}
+
+@media (min-width:768px) {
+  h1.song-search-text {
+    font-size: 57px;
+    text-align: center;
+    margin-bottom: 59px;
+  }
+}
+
+.bi.bi-search {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  pointer-events: none;
+  color: #000000;
+}
+
+@media (min-width:768px) {
+  .bi.bi-search {
+    font-size: 40px;
+    margin-top: 7px;
+    margin-left: 10px;
+  }
+}
+
+.search-box {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  background-color: white;
+  margin-top: 27px;
+  border-radius: 10px;
+  line-height: 1.3;
+}
+
+@media (min-width:768px) {
+  .search-box {
+    font-size: 40px;
+  }
+}
+
+
+.search-results {
+  list-style: none;
+  padding: 0;
+  margin-top: 27px;
+  color: white;
+  cursor: pointer;
+}
+
+.search-results li {
+  background: linear-gradient(to right, #b071a1, #7e1bac);
+  line-height: 3;
+  font-size: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width:768px) {
+  .search-results li {
+    margin-top: 40px;
+    font-size: 29px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+span.song-item-title {
+  font-weight: 700;
+  color: yellow;
+}
+
+.footer-songsearch {
+  margin-top: 329px
+}
+
+@media (min-width:768px) {
+  .footer-songsearch {
+    margin-top: 459px
+  }
+}
+
+/*contactページ*/
+
+
+.main {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+
+
+.form-section {
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-top: 87px;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+@media (min-width:1110px) {
+  .form-section {
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 1070px;
+    margin: 0 auto;
+    padding-top: 120px;
+  }
+}
+
+.contact-text {
+  font-size: 25px;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 38px;
+}
+
+@media (min-width:1110px) {
+  .contact-text {
+    font-size: 57px;
+    text-align: center;
+    margin-bottom: 96px;
+  }
+}
+
+@media (min-width:1110px) {
+  .full-name {
+    display: flex;
+    column-gap: 177px;
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width:1110px) {
+  .textfield-1 {
+    flex: 1;
+  }
+}
+
+@media (min-width:1110px) {
+  .textfield-2 {
+    flex: 1;
+  }
+}
+
+input.textfield {
+  border: 1px solid #d1ccb4;
+}
+
+
+input.textfield {
+  margin-bottom: 35px;
+  margin-top: 11px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: white;
+  padding: 8px;
+}
+
+input.textfield:focus {
+  background-color: #fffcea;
+}
+
+@media (min-width:1110px) {
+  input.textfield {
+    padding: 30px;
+    margin-top: 44px;
+    margin-bottom: 71px;
+  }
+}
+
+
+textarea.comment {
+  border: 1px solid #d1ccb4;
+  height: 170px;
+  overflow-y: scroll;
+  width: 100%;
+  margin-top: 11px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+@media (min-width:1110px) {
+  textarea.comment {
+    margin-top: 44px;
+    margin-bottom: 71px;
+  }
+}
+
+.submit-button {
+  border: 1px solid #d1ccb4;
+  width: 100%;
+  margin-top: 35px;
+  border-radius: 10px;
+  padding: 8px;
+  background: linear-gradient(to right, #b071a1, #7e1bac);
+  color: white;
+}
+
+@media (min-width:1110px) {
+  .submit-button {
+    padding: 30px;
+    margin-top: 44px;
+    font-weight: 700;
+  }
+}
+
+
+
+@media (min-width:768px) {
+  .submit-button:hover {
+    color: black;
+    background: linear-gradient(to right, #ffb0ec, #be33ff);
+  }
+}
+
+.footer-contact {
+  margin-top: 33px;
+}
+
+
+@media (min-width:768px) {
+
+  .footer-contact {
+    margin-top: 465px;
+  }
+
+}
+
+/*producer-informationページ*/
+
+.producer-information {
+  padding-top: 87px;
+  background-image: url("../images/producer-information/profile_background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-bottom: 55px;
+}
+
+@media (min-width:768px) {
+  .producer-information {
+    padding-top: 120px;
+    padding-right: 94px;
+    padding-left: 94px;
+    background-image: url("../images/producer-information/profile_background_pc.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 391px;
+  }
+}
+
+.producer-information h1 {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  font-size: 25px;
+}
+
+@media (min-width:768px) {
+  .producer-information h1 {
+    font-size: 57px;
+    text-align: center;
+  }
+}
+
+.profile-round {
+  background-color: #000000;
+  border-radius: 50px;
+  text-align: center;
+  margin-top: 5px;
+  padding-bottom: 40px;
+}
+
+@media (min-width:1300px) {
+  .profile-round {
+    margin-top: 52px;
+    padding-bottom: 234px;
+  }
+}
+
+@media (min-width:1300px) {
+  .coffee-profile-round {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    column-gap: 138px;
+  }
+}
+
+
+.coffee-image {
+  margin-top: 14px;
+  max-width: 100%;
+  max-height: 100%;
+  width: 257px;
+  height: 257px;
+}
+
+@media (min-width:1300px) {
+  .coffee-image {
+    margin-top: 14px;
+    max-width: 100%;
+    max-height: 100%;
+    width: initial;
+    height: initial;
+    margin-top: 124px;
+  }
+}
+
+
+
+.profile-image {
+  max-width: 100%;
+  max-height: 100%;
+  height: 141px;
+  width: 141px;
+  margin-top: 31px;
+}
+
+@media (min-width:1300px) {
+  .profile-image {
+    max-width: 100%;
+    max-height: 100%;
+    height: initial;
+    width: initial;
+    margin-top: 243px;
+  }
+}
+
+.profile-text {
+  color: white;
+  margin-top: 42px;
+}
+
+@media (min-width:1300px) {
+  .profile-text {
+    font-size: 29px;
+    text-align: left;
+  }
+}
+
+.profile-text-title {
+  font-weight: 700;
+}
+
+.profile-text-content {
+  margin-top: 20px;
+  line-height: 1.5;
+}

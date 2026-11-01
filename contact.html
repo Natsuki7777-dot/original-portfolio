@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Natsuki's Portfolio</title>
+    <meta name="description" content="黒住菜月のポートフォリオをご覧くださりありがとうございます。ここでは、自己紹介、スキル、実績・作品などを記載しています。">
+
+    <!-- リセットcss-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!--google fonts-- Stint Ultra Condensed, Stint Ultra Condensed-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+    <!-- SlickのCSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="header-background">
+        <div class="header-logo">
+          <a href="./"><img src="images/home/header/header_logo.png" class="header-logo" alt=""></a>
+        </div>
+
+        <button><i class="bi bi-list hamburger-icon"></i></button>
+
+
+        <div class="header-menu-pc-list">
+          <div><a href="./contact.html">コンタクト</a></div>
+          <div><a href="index.html#skill-text">スキル</a></div>
+          <div><a href="works/works_biglobe.html">Webディレクター経験</a></div>
+          <div><a href="works/works_lofiplaylist/index.html" target="_blank">プレイリスト</a></div>
+          <div><a href="profile.html">プロフィール</a></div>
+        </div>
+
+        <nav class="hamburger-menu">
+          <ul class="hamburger-menu-list">
+            <li><a href="./contact.html">コンタクト</a></li>
+            <li><a href="index.html#skill-text">スキル</a></li>
+            <li><a href="works_biglobe.html">Webディレクター経験</a></li>
+            <li><a href="works/works_lofiplaylist/index.html">プレイリスト</a></li>
+            <li><a href="profile.html">プロフィール</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+    <main class="contact-main">
+
+      <section class="form-section">
+        <form action="#">
+          <h1>
+            <picture class="contact-text-area">
+              <!-- ブラウザ幅768pxまで表示 -->
+              <source srcset="images/contact/text/contact.png" media="(max-width: 768px)">
+              <!-- ブラウザ幅769px～から最大幅まで表示 -->
+              <img src="images/contact/text/contact_pc.png" class="contact-text" alt="">
+            </picture>
+          </h1>
+          <div class="full-name">
+            <div class="textfield-1">
+              <p><label>名<br>
+                  <input type="text" name="name" class="textfield"></label></p>
+            </div>
+
+            <div class="textfield-2">
+              <p><label>姓<br>
+                  <input type="text" name="name" class="textfield"></label></p>
+            </div>
+          </div>
+
+          <div class="textfield-3">
+            <p><label>メールアドレス<br>
+                <input type="text" name="name" class="textfield"></label></p>
+          </div>
+
+          <div class="textfield-4">
+            <p><label>お問い合わせ内容<br>
+                <textarea name="comment" class="comment"></textarea></label></p>
+          </div>
+
+          <p><input type="submit" value="送信" class="submit-button"></p>
+
+        </form>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>
+        <div class="footer-text1">Contact: kurona2716@gmail.com</div>
+      </div>
+
+      <div>
+        <div class="footer-text2">copyright© NATSUKI KUROSUMI All Rights Reserved.</div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- SlickのJS -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+
+</html>

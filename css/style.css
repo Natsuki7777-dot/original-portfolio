@@ -332,10 +332,76 @@ h2#home-works-text {
   }
 }
 
-.playlist-see-details-githuburl{
-  font-size:21px;
+.lofiplaylist_description,
+.biglobe_description {
+  border-radius: 10px;
+  background-color: #1ae7c3;
+  background-image: url(../images/home/header/hamburger-menu-inside/header-menu-background-image.png);
+  background-size: cover;
+  width: 100%;
+  max-width: 251px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+
+@media (min-width:768px) {
+
+  .lofiplaylist_description,
+  .biglobe_description {
+    max-width: 523px;
+  }
+}
+
+h3.work-title {
+  font-size: 15px;
+}
+
+@media (min-width:768px) {
+  h3.work-title {
+    font-size: 26px;
+  }
+}
+
+p.work-description {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-align: left;
+}
+
+@media (min-width:768px) {
+  p.work-description {
+    font-size: 22px;
+  }
+}
+
+p.work-tech {
+  font-size: 14px;
+  text-align: left;
+}
+
+
+@media (min-width:768px) {
+  p.work-tech {
+    font-size: 22px;
+  }
+}
+
+
+.playlist-see-details-githuburl,
+.biglobe-see-details-url {
+  font-size: 14px;
   text-decoration: none;
-  font-weight:bold;
+  font-weight: bold;
+}
+
+@media (min-width:768px) {
+
+  .playlist-see-details-githuburl,
+  .biglobe-see-details-url {
+    font-size: 22px;
+  }
 }
 
 footer {
@@ -345,7 +411,7 @@ footer {
   padding-bottom: 30px;
   font-size: 15px;
   font-weight: 600;
-  line-height:1.7;
+  line-height: 1.7;
 }
 
 
@@ -354,7 +420,7 @@ footer {
     padding-top: 48px;
     padding-bottom: 48px;
     font-size: 22.5px;
-    line-height:2.5;
+    line-height: 2.5;
   }
 }
 
@@ -792,6 +858,13 @@ footer {
   max-width: 100%;
   max-height: 100%;
   margin: 0 auto;
+  width: 107px;
+}
+
+@media (min-width:768px) {
+  .toppage-picture {
+    width: initial;
+  }
 }
 
 .usage-flow-title {
@@ -840,6 +913,13 @@ footer {
   max-width: 100%;
   max-height: 100%;
   margin: 0 auto;
+  width: 360px;
+}
+
+@media (min-width:768px) {
+  .usage-flow-top-picture {
+    width: initial;
+  }
 }
 
 .usage-flow-text {
@@ -847,7 +927,7 @@ footer {
   margin-top: 30px;
   text-align: left;
   font-size: 18px;
-  font-weight:400;
+  font-weight: 400;
 }
 
 @media (min-width:768px) {
@@ -933,11 +1013,13 @@ img.providedi-area-includiing-map {
   max-width: 100%;
   max-height: 100%;
   margin-top: 30px;
+  width: 360px;
 }
 
 @media (min-width:768px) {
   img.providedi-area-includiing-map {
     margin-top: 45px;
+    width: initial;
   }
 }
 
@@ -946,7 +1028,7 @@ img.providedi-area-includiing-map {
   margin-top: 30px;
   text-align: left;
   font-size: 18px;
-  font-weight:400;
+  font-weight: 400;
 }
 
 
@@ -1014,11 +1096,13 @@ img.simgurashi-example1 {
   margin-top: 30px;
   max-width: 100%;
   max-height: 100%;
+  width: 360px;
 }
 
 @media (min-width:768px) {
   img.simgurashi-example1 {
     margin-top: 45px;
+    width: initial;
   }
 }
 
@@ -1040,11 +1124,13 @@ img.simgurashi-example2 {
   margin-top: 30px;
   max-width: 100%;
   max-height: 100%;
+  width: 360px;
 }
 
 @media (min-width:768px) {
   img.simgurashi-example2 {
     margin-top: 45px;
+    width: initial;
   }
 }
 
@@ -1052,11 +1138,13 @@ img.simgurashi-example3 {
   margin-top: 30px;
   max-width: 100%;
   max-height: 100%;
+  width: 360px;
 }
 
 @media (min-width:768px) {
   img.simgurashi-example3 {
     margin-top: 45px;
+    width: initial;
   }
 }
 
@@ -1066,7 +1154,7 @@ img.simgurashi-example3 {
   margin-top: 30px;
   text-align: left;
   font-size: 18px;
-  font-weight:400;
+  font-weight: 400;
 }
 
 @media (min-width:768px) {
@@ -1152,6 +1240,15 @@ img.simgurashi-example3 {
 .router-guide-picture {
   max-width: 100%;
   max-height: 100%;
+  width: 360px;
+}
+
+@media (min-width:768px) {
+  .router-guide-picture {
+    max-width: 100%;
+    max-height: 100%;
+    width: initial;
+  }
 }
 
 .banner-title {
@@ -1196,12 +1293,23 @@ img.simgurashi-example3 {
   text-decoration: underline;
 }
 
+img.campaign-banner-picture {
+  max-width: 100%;
+  width: 360px;
+}
+
+@media (min-width:768px) {
+  img.campaign-banner-picture {
+    width: initial;
+  }
+}
+
 .banner-area-text {
   font-weight: 700;
   margin-top: 30px;
   text-align: left;
   font-size: 18px;
-  font-weight:400;
+  font-weight: 400;
 }
 
 @media (min-width:768px) {
@@ -1242,8 +1350,8 @@ img.simgurashi-example3 {
   }
 }
 
-.source-area-inside-text{
-  font-weight:400;
+.source-area-inside-text {
+  font-weight: 400;
 }
 
 

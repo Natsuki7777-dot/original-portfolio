@@ -24,7 +24,6 @@ $(window).on('resize', function () {
 });
 
 
-
 // Slickリファレンス
 // https://kenwheeler.github.io/slick/
 

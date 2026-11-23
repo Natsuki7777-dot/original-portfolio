@@ -10,6 +10,14 @@ $(window).on('resize', function () {
   // ハンバーガーメニューを閉じる
   hamburger.removeClass('hamburger-menu-active');
 });
+//audioの同時再生を防ぐ
+document.addEventListener('play', function (e) {
+  document.querySelectorAll('audio').forEach(function (audio) {
+    if (audio !== e.target) {
+      audio.pause();
+    }
+  });
+}, true);
 
 
 //home-songs
@@ -36,38 +44,38 @@ function playAudio(trackNumber) {
 }
 
 //playlistページ
-$(document).ready(function() {
-const urlParams = new URLSearchParams(window.location.search);
-const song = urlParams.get('song');
+$(document).ready(function () {
+  const urlParams = new URLSearchParams(window.location.search);
+  const song = urlParams.get('song');
 
-$('.audio-player').each(function() {
-if ($(this).data('song') === song) {
-$(this)[0].play();
-$(this).parent().css('background-color','#612c75');
-}
-});
-});
+  $('.audio-player').each(function () {
+    if ($(this).data('song') === song) {
+      $(this)[0].play();
 
+      $(this).parent().css('background-color', '#612c75');
+    }
+  });
+});
 
 //songsearchページ
 
-$(document).ready(function() {
-$('.search-box').on('input', function() {
-const searchTerm = $(this).val().toLowerCase();
+$(document).ready(function () {
+  $('.search-box').on('input', function () {
+    const searchTerm = $(this).val().toLowerCase();
 
-$('.song-item').each(function() {
-const songName = $(this).text().toLowerCase();
-if (songName.includes(searchTerm)) {
-$(this).show();
-} else {
-$(this).hide();
-}
-});
-});
+    $('.song-item').each(function () {
+      const songName = $(this).text().toLowerCase();
+      if (songName.includes(searchTerm)) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
+  });
 
-$('.song-item').on('click', function() {
-const song = $(this).data('song');
-window.location.href = 'https://natsukikurosumi.sakura.ne.jp/oroginal-portfolio/works/works_lofiplaylist/lofiplaylist_playlist.html?song=' + song;
-});
+  $('.song-item').on('click', function () {
+    const song = $(this).data('song');
+    window.location.href = 'lofiplaylist_playlist.html?song=' + song;
+  });
 });
 
